@@ -1,0 +1,216 @@
+/* service hero */
+.serv-hero{
+    background: url(../assets/immigration-header.jpg);
+    height: 250px;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.serv-hero-head{
+    position: relative;
+}
+.serv-hero-head h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.serv-hero-head::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 3px;
+    left: 0px;
+    bottom: -8px;
+    background: #ec4e4f;
+}
+.serv-hero-head .dotted-box .dotted {
+    position: absolute;
+    left: 44px;
+    width: 3px;
+    height: 3px;
+    bottom: -8px;
+}
+.serv-hero-head .dotted-box .dotted {
+    background: #ec4e4f;
+}
+.serv-hero-head .dotted-box .dotted:nth-child(2) {
+    left: 50px;
+}
+.serv-hero-head .dotted-box .dotted:nth-child(3) {
+    left: 56px;
+}
+.service-card{
+    margin: 40px 0;
+}
+.service-card .prm-btn {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+.service-text {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.7;
+    text-align: center;
+}
+.service-img {
+    text-align: center;
+    position: relative;
+}
+.serv-sec {
+    padding: 50px 0;
+}
+.serv-title{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+
+.serv-hero.express-entry{
+    background-image: url(../assets/express-header.png);
+}
+
+
+.about-serv{
+    padding: 40px 0;
+}
+
+.about-serv p{
+    line-height: 2;
+}
+
+.free-assessment {
+    margin: 30px 0;
+}
+
+.free-assessment .prm-btn{
+    margin-right: 10px;
+}
+
+.about-serv span.head {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.about-serv ul, .about-serv li {
+    list-style: disc;
+    padding-left: 20px;
+}
+.about-serv ul {
+    margin: 5px 0 10px 0;
+}
+.big-head {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+
+.serv-hero.express-entry-assess{
+    background-image: url(../assets/immigration-header.jpg);
+}
+
+.about-serv .form-label{
+    font-size: 14px;
+    margin-top: 15px;
+    display:block;
+}
+
+.about-serv h3{
+    margin-top: 40px;
+}
+
+.serv-hero.pnp{
+    background-image: url(../assets/pnp-header.jpg);
+    background-position: center;
+}
+
+
+/* city card */
+.city-cards{
+    margin: 20px 0;
+}
+.city-card{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.city-card img, .city-card .bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.city-card span{
+    z-index: 1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+}
+.city-card .bg-overlay{
+    background: rgba(0, 0, 0, .5);
+}
+
+
+
+
+.serv-hero.work-permit{
+    background-image: url(../assets/work-header.jpg);
+    background-position: center;
+}
+
+
+
+.serv-hero.other-visa{
+    background-image: url(../assets/other-visa-header.png);
+    background-position: center;
+}
+
+
+
+.serv-hero.contact{
+    background-image: url(../assets/contact-header.jpg);
+    background-position: center;
+}
+
+
+.serv-hero.investor{
+    background-image: url(../assets/investor-visa-header.png);
+    background-position: bottom;
+}
+
+
+
+.serv-hero.employer{
+    background-image: url(../assets/employer-header.png);
+    background-position: center;
+}
+
+
+.about-serv.contact form{
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.about-serv.contact form input,.about-serv.contact form select{
+    height: 50px;
+}
