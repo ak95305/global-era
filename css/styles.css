@@ -374,7 +374,7 @@ header ul li:hover::after {
     flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 .serv-card.serv .serv-head {
