@@ -44,7 +44,7 @@
         <header>
 
             <div class="container-xl">
-                <div class="nav d-flex align-items-center justify-content-between">
+                <div class="nav d-flex justify-content-between">
                     <div class="logo-img">
                         <a href="/">
                             <img src="assets/logo.png" alt="logo">
@@ -62,22 +62,25 @@
                     <ul class="nav-links">
                         <li><a href="/" class="active">Home</a></li>
                         <li class="dropdown">
-                            <a class="dropbtn">Immigration</a>
-                            <ul class="dropdown-content">
-                                <li><a href="immigration.html">Immigration</a></li>
-                                <li><a href="express-entry.html">Express Entry</a></li>
-                                <li><a href="express-assessment.html">Express Entry Assessment</a></li>
-                                <li><a href="pnp.html">PNP</a></li>
-                                <li><a href="work-permit.html">Work Permit</a></li>
-                                <li><a href="other-visa.html">Other Visas</a></li>
-                            </ul>
+                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i class="fa-sharp fa-solid fa-plus"></i></a></label>
+                            <input type="checkbox" id="check-btn">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="immigration.html">Immigration</a></li>
+                                    <li><a href="express-entry.html">Express Entry</a></li>
+                                    <li><a href="express-assessment.html">Express Entry Assessment</a></li>
+                                    <li><a href="pnp.html">PNP</a></li>
+                                    <li><a href="work-permit.html">Work Permit</a></li>
+                                    <li><a href="other-visa.html">Other Visas</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <!-- <li><a href="about.html">Work</a></li>
                         <li><a href="contact.html">Study</a></li>
                         <li><a href="contact.html">Visit</a></li> -->
                         <li><a href="employer.html">Employer</a></li>
-<li><a href="investor-visa.html">Investor Visa</a></li>
-<li><a href="about.html">About</a></li>
+                        <li><a href="investor-visa.html">Investor Visa</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
 
                     </ul>
@@ -85,7 +88,6 @@
             </div>
 
         </header>
-
 
 
         <!-- service hero section -->
@@ -107,78 +109,432 @@
         <!-- about text -->
         <div class="about-serv">
             <div class="container">
-                <p>Express entry to Canada is a completely electronic process where an applicant is assessed based on
-                    their skills, age, education, language ability, work experience and other factors. A score will be
-                    awarded using the Comprehensive Ranking System (CRS),which is a point-based system that determines
-                    eligibility.
-                    Applications for this stream must be made through the express entry profile system on the Citizen
-                    and Immigration Canada (CIC) online portal. Having a Canadian job offer will give you more points,
-                    thereby increasing your chance of receiving an invitation to apply. If you do not have a job offer
-                    or a provincial nomination, you must create a Job Bank profile after the creation of an express
-                    entry profile. We can help in assisting you in getting a job offer or PNP, simply fill out our free
-                    online assessment.</p>
 
-                <div class="free-assessment">
-                    <a href="" class="prm-btn">Free Assessment</a>To see if you qualify for this program
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="left-text">
+                            <p>Express entry to Canada is a completely electronic process where an applicant is assessed
+                                based
+                                on
+                                their skills, age, education, language ability, work experience and other factors. A
+                                score
+                                will
+                                be
+                                awarded using the Comprehensive Ranking System (CRS),which is a point-based system that
+                                determines
+                                eligibility.
+                                Applications for this stream must be made through the express entry profile system on
+                                the
+                                Citizen
+                                and Immigration Canada (CIC) online portal. Having a Canadian job offer will give you
+                                more
+                                points,
+                                thereby increasing your chance of receiving an invitation to apply. If you do not have a
+                                job
+                                offer
+                                or a provincial nomination, you must create a Job Bank profile after the creation of an
+                                express
+                                entry profile. We can help in assisting you in getting a job offer or PNP, simply fill
+                                out
+                                our
+                                free
+                                online assessment.</p>
+
+                            <!-- <div class="free-assessment">
+                                <a href="" class="prm-btn">Free Assessment</a>To see if you qualify for this program
+                            </div> -->
+
+
+
+                            <span class="head">Express entry is based off three main streams:</span>
+                            <ul>
+                                <li>The Federal Skilled Worker Program (FSW)</li>
+                                <li>The Federal Skilled Trades Program (FST)</li>
+                                <li>The Canadian Experience Class (CEC)</li>
+                            </ul>
+
+
+                            <div class="big-head">
+                                Skilled Workers
+                            </div>
+                            <p>This category consists of people who have one year of continuous full-time work
+                                experience in
+                                a
+                                NOC
+                                0, A or B occupation. Work experience over the last 10 years is considered valid. <br>
+                                You must have achieved a CLB 7 in all four language requirements for either English or
+                                French.
+                                If
+                                you do not have a Canadian education, you must acquire an Educational Credential
+                                Assessment.
+                                <br>
+                                Skilled workers must also pass their own point-based selection criteria, where a minimum
+                                of
+                                67
+                                points is required for the application to be processed further. These criteria are
+                                similar
+                                to
+                                those
+                                found in an express entry profile. <br>
+                                If a valid job offer is not present, proof of settlement funds is required for you and
+                                all
+                                accompanying family members.
+                            </p>
+
+
+                            <div class="big-head">
+                                Skilled Workers
+                            </div>
+                            <span class="head">The trades represent a group of technical occupations where the current
+                                eligible
+                                group consists of:
+
+                            </span>
+                            <ul>
+                                <li>Industrial, electrical and construction</li>
+                                <li>Maintenance and equipment operations</li>
+                                <li>Technical jobs in natural resources, agriculture and related production</li>
+                                <li>Processing, manufacturing and utiliies supervisors and control operators</li>
+                                <li>Chefs, cooks, butchers and bakers</li>
+                            </ul>
+
+                            <span class="head">To be eligible for the Skilled Trades program, applicants must
+                                have:</span>
+                            <ul>
+                                <li>2 years of fulltime experience within the last 5 years</li>
+                                <li>CLB 5 in speaking and listening and CLB 4 in reading and writing</li>
+                                <li>A job offer OR a certificate of qualification issued by a Canadian province</li>
+                                <li>Meet all job requirements for that occupation according to the NOC classification
+                                </li>
+                                <li>Chefs, cooks, butchers and bakers</li>
+                            </ul>
+
+
+                            <div class="big-head">
+                                Canadian Experience Class
+                            </div>
+                            <p>This program is a perfect for international students who have obtained a post-graduate
+                                work
+                                permit
+                                and have worked for at least one year within the past three years. They can use their
+                                Canadian
+                                work
+                                experience in a NOC 0, A or B occupation to apply for this program. <br>
+                                NOC 0 or A requires a language ability of CLB 7. NOC B requires a CLB 5.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form method="post" class="form-j1 row" id="j1assessmentForm" novalidate="novalidate">
+                            <div class="col-md-12" style="">
+                                <h3>Personal Details</h3>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" value="" class="form-control"
+                                    name="txtFullNamePersonalDetails">
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" placeholder="Enter Date of Birth"
+                                    name="dtpDateofBirthPersonalDetails" class="form-control" value="2000-01-01"
+                                    min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Marital Status</label>
+                                <select class="form-select" name="cmbMaretileStatus" placeholder="maritialStatus"
+                                    aria-invalid="true">
+                                    <option selected="" value="">Select Status</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Single">Single</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Number of family members (You, Your spouse and kids)</label>
+                                <input type="text" placeholder="Number of Members" value="" class="form-control"
+                                    name="txtNumberOfFamilyMembers">
+                            </div>
+                            <div class="col-md-12 col-sm-12" style="">
+                                <h3>Contact Info</h3>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" placeholder="Enter Email Address" value="" class="form-control"
+                                    name="txtEmailPersonal">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Phone</label>
+                                <input type="text" placeholder="Enter Phone Number" value="" class="form-control"
+                                    name="txtPhone">
+                            </div>
+                            <div class="col-md-12 col-sm-12" style="">
+                                <h3>Working Experience ( Inside Canada )</h3>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of Employer</label>
+                                <input type="text" placeholder="Name of Employer" value="" class="form-control"
+                                    name="txtCurrentEmployer">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Address Of The Employer</label>
+                                <input type="text" placeholder="Enter Adress" value="" class="form-control"
+                                    name="txtAddressOfEmployer">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Job Title</label>
+                                <input type="text" placeholder="Job Title" value="" class="form-control"
+                                    name="txtJobTitleCurrent">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Wages (Hourly/Annually)</label>
+                                <input type="text" placeholder="Wages" value="" class="form-control"
+                                    name="txtWagesCurrent">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Joining Date</label>
+                                <input type="date" placeholder="Enter Date of Birth" name="dtpJoiningDate"
+                                    class="form-control" value="2000-01-01" min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Total years of experience within last 10 years INSIDE
+                                    Canada</label>
+                                <input type="text" value="" class="form-control"
+                                    name="txttotalYearsOfExperianceInsideCanada">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Total years of experience within last 10 years OUTSIDE
+                                    Canada</label>
+                                <input type="text" value="" class="form-control"
+                                    name="txttotalYearsOfExperianceOutsideCanada">
+                            </div>
+                            <div class="col-md-12 col-sm-12" style="">
+                                <h3>Spouse Working Experience</h3>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Is your Spouse currently in Canada?</label>
+                                <select class="form-select" name="cmbIsWifeInCanada" id="cmbIsWifeInCanad"
+                                    placeholder="maritialStatus" aria-invalid="true">
+                                    <option selected="" value="">Select Status</option>
+                                    <option value="Married">Yes</option>
+                                    <option value="Single">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Is Spouse currently employed?</label>
+                                <select class="form-select" name="cmbIsWifeWorking" id="cmbIsWifeWorkin"
+                                    placeholder="maritialStatus" aria-invalid="true">
+                                    <option selected="" value="">Select Status</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of employer</label>
+                                <input type="text" placeholder="Name of Employer" name="txtNameOfSpouseEmp"
+                                    id="txtNameOfSpouseEm" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Address Of Employer</label>
+                                <input type="text" placeholder="Enter Adress" name="txtAddressSpouseEmp"
+                                    id="txtAddressSpouseEm" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Job Title</label>
+                                <input type="text" placeholder="Job Title" name="txtSpouseJobTitle"
+                                    id="txtSpouseJobTitl" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Wages (Hourly/Annually)</label>
+                                <input type="text" placeholder="Wages" name="txtWifeWages" value="" id="txtWifeWage"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Joining Date</label>
+                                <input type="date" placeholder="Enter Date of Birth" name="dtpJoiningDateSpouseWorking"
+                                    id="dtpJoiningDateSpouseWorkin" class="form-control" value="2000-01-01"
+                                    min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="col-md-12 col-sm-12" style="">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mt-5">
+                                <label class="form-label fw-bold">1.English/French Language proficiency: For Applicant
+                                    (If
+                                    applicable)</label>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of the test</label>
+                                <input type="text" placeholder="Name of the test" value="" class="form-control"
+                                    name="txtNameOftheTest">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Date Taken</label>
+                                <input type="date" name="dtpEducationTestTakenDate" class="form-control"
+                                    value="2000-01-01" min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Speaking band score</label>
+                                <input type="text" name="txtSpekingBandScoreApplicant" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Listening band score</label>
+                                <input type="text" name="txtListningBandScore" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Writing band score</label>
+                                <input type="text" name="txtWrittenBandScore" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Reading band score</label>
+                                <input type="text" name="txtREadingBandScore" value="" class="form-control">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Overall band score</label>
+                                <input type="text" name="txtOverallBandScore" value="" class="form-control">
+                            </div>
+                            <div class="col-md-12 col-sm-12 mt-5">
+                                <label class="form-label fw-bold font:bold">2.English/French Language proficiency: For
+                                    Your
+                                    Spouse
+                                    (If applicable)</label>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of the test</label>
+                                <input type="text" placeholder="Name of the test" value="" class="form-control"
+                                    name="txtNameOfTheTestSpouse">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Date Taken</label>
+                                <input type="date" name="dtpSpouseEducationdateTaken" class="form-control"
+                                    value="2000-01-01" min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Speaking band score</label>
+                                <input type="text" value="" class="form-control" name="txtSpekingBandScoreSpouse">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Listening band score</label>
+                                <input type="text" value="" class="form-control" name="txtListningBandScoreSpouce">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Writing band score</label>
+                                <input type="text" value="" class="form-control" name="txtWritingBandScoreSpouce">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Reading band score</label>
+                                <input type="text" value="" class="form-control" name="txtREadingBandScoreSpouce">
+                            </div>
+                            <div class="form-group  col-xl-2 col-sm-3 col-4">
+                                <label class="form-label">Overall band score</label>
+                                <input type="text" value="" class="form-control" name="txtOverallBandScoreSpouce">
+                            </div>
+                            <div class="col-md-12 col-sm-12 mt-5">
+                                <label class="form-label fw-bold">3. Highest level of Education : For Applicant (If
+                                    Applicable)</label>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of the degree certificate</label>
+                                <input type="text" value="" class="form-control" name="txtDegreeCertificateApplicant">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of the school</label>
+                                <input type="text" value="" class="form-control" name="txtSchoolApplicant">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">From</label>
+                                <input type="date" id="dtpFrom" class="form-control" name="dtpFromHigestEducation"
+                                    value="2000-01-01" min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">To</label>
+                                <input type="date" class="form-control" name="dtpToHigestEducation" value="2000-01-01"
+                                    min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">City/Town</label>
+                                <input type="text" value="" class="form-control" name="txtCity">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Country</label>
+                                <input type="text" value="" class="form-control" name="txtCountry">
+                            </div>
+                            <div class="col-md-12 col-sm-12 mt-5">
+                                <label class="form-label fw-bold">4. Highest level of Education : For Spouse (If
+                                    Applicable)</label>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of the degree certificate</label>
+                                <input type="text" value="" class="form-control" name="txtSpouseDegreeName">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Name of the school</label>
+                                <input type="text" value="" class="form-control" name="txtNameOfSchoolSpouse">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">From</label>
+                                <input type="date" class="form-control" name="dtpFromHigestEducationSpouse"
+                                    value="2000-01-01" min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">To</label>
+                                <input type="date" class="form-control" name="dtpToHigestEducationSpouse"
+                                    value="2000-01-01" min="1950-01-01" max="3000-12-31">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">City/Town</label>
+                                <input type="text" value="" class="form-control" name="txtspouceCity">
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6">
+                                <label class="form-label">Country</label>
+                                <input type="text" value="" class="form-control" name="txtspouceCountry">
+                            </div>
+                            <div class="form-group  col-md-12 col-sm-12">
+                                <label class="form-label">Have you obtained an Educational Credential Assessment report
+                                    from
+                                    a designated organization? </label>
+                                <select class="form-select" name="cmbEducationAssesmtReport"
+                                    id="cmbEducationAssesmtRepor" placeholder="maritialStatus" aria-invalid="true">
+                                    <option selected="" value="">Select Status</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-md-12 col-sm-12">
+                                <label class="form-label">Canadian equivalency?
+                                </label>
+                                <input type="text" name="txtCanadianEqu" id="txtCanadianEq" class="form-control">
+                            </div>
+                            <div class="form-group  col-md-12 col-sm-12">
+                                <label class="form-label">Do you or your spouse have at least one brother or sister
+                                    living
+                                    in
+                                    Canada who is a Citizen or Permanent Resident?
+                                </label>
+                                <input type="text" name="txtIsSimblingsinCanada" value="" class="form-control">
+                            </div>
+                            <!--<div class="form-group  col-md-12 col-sm-12">
+                              <label class="form-label">Do you or your spouse have at least one brother or sister living in Canada who is a Citizen or Permanent Resident?
+                              </label>
+                              <input type="text"  name="txtIsSimblingsinCanada" value="" class="form-control">
+                              </div>-->
+
+                            <div id="recaptcha" class="g-recaptcha"
+                                data-sitekey="6LeD6DEUAAAAAM49Z8qAGrVCAW1CAX4txLOv2V6n"
+                                data-callback="FormSubmitReCaptcha" data-size="invisible">
+                            </div>
+                            <div class="col-md-12 col-sm-12" style="">
+                                <h3> </h3>
+                                <br>
+                            </div>
+                            <div class="form-group col-md-3 col-sm-3">
+                                <button class="prm-btn" iid="submitButton" onclick="formSubmit()" type="submit">Submit
+                                    Assessment</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-
-
-
-                <span class="head">Express entry is based off three main streams:</span>
-                <ul>
-                    <li>The Federal Skilled Worker Program (FSW)</li>
-                    <li>The Federal Skilled Trades Program (FST)</li>
-                    <li>The Canadian Experience Class (CEC)</li>
-                </ul>
-
-
-                <div class="big-head">
-                    Skilled Workers
-                </div>
-                <p>This category consists of people who have one year of continuous full-time work experience in a NOC
-                    0, A or B occupation. Work experience over the last 10 years is considered valid. <br>
-                    You must have achieved a CLB 7 in all four language requirements for either English or French. If
-                    you do not have a Canadian education, you must acquire an Educational Credential Assessment. <br>
-                    Skilled workers must also pass their own point-based selection criteria, where a minimum of 67
-                    points is required for the application to be processed further. These criteria are similar to those
-                    found in an express entry profile. <br>
-                    If a valid job offer is not present, proof of settlement funds is required for you and all
-                    accompanying family members.
-                </p>
-
-
-                <div class="big-head">
-                    Skilled Workers
-                </div>
-                <span class="head">The trades represent a group of technical occupations where the current eligible
-                    group consists of:
-
-                </span>
-                <ul>
-                    <li>Industrial, electrical and construction</li>
-                    <li>Maintenance and equipment operations</li>
-                    <li>Technical jobs in natural resources, agriculture and related production</li>
-                    <li>Processing, manufacturing and utiliies supervisors and control operators</li>
-                    <li>Chefs, cooks, butchers and bakers</li>
-                </ul>
-
-                <span class="head">To be eligible for the Skilled Trades program, applicants must have:</span>
-                <ul>
-                    <li>2 years of fulltime experience within the last 5 years</li>
-                    <li>CLB 5 in speaking and listening and CLB 4 in reading and writing</li>
-                    <li>A job offer OR a certificate of qualification issued by a Canadian province</li>
-                    <li>Meet all job requirements for that occupation according to the NOC classification</li>
-                    <li>Chefs, cooks, butchers and bakers</li>
-                </ul>
-
-
-                <div class="big-head">
-                    Canadian Experience Class
-                </div>
-                <p>This program is a perfect for international students who have obtained a post-graduate work permit
-                    and have worked for at least one year within the past three years. They can use their Canadian work
-                    experience in a NOC 0, A or B occupation to apply for this program. <br>
-                    NOC 0 or A requires a language ability of CLB 7. NOC B requires a CLB 5.</p>
 
             </div>
         </div>
@@ -207,19 +563,20 @@
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="express-assessment.html">Free Assessment</a></li>
                             <li><a href="employer.html">Employer</a></li>
-<li><a href="investor-visa.html">Investor Visa</a></li>
+                            <li><a href="investor-visa.html">Investor Visa</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-5">
                         <ul>
                             <li class="head">Get In Touch</li>
                             <li><span class="grey-text">13798 94A Ave Unit 207
-                                Surrey BC V3V 1N1</span></li>
+                                    Surrey BC V3V 1N1</span></li>
                             <li><span class="grey-text">Front Desk:</span> +1 (604) 349-3549</li>
                             <li><span class="grey-text">Email:</span> robin@globaleraimmigration.com</li>
                             <li><span class="grey-text">Mon-Fri:</span> 10:00AM - 7:00PM <br>
                                 <span class="grey-text">Saturday:</span> 10:30AM - 3:30PM <br>
-                                <span class="grey-text">Sunday:</span> Closed</li>
+                                <span class="grey-text">Sunday:</span> Closed
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-5">

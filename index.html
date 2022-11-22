@@ -43,7 +43,7 @@
         <header>
 
             <div class="container-xl">
-                <div class="nav d-flex align-items-center justify-content-between">
+                <div class="nav d-flex justify-content-between">
                     <div class="logo-img">
                         <a href="/">
                             <img src="assets/logo.png" alt="logo">
@@ -61,22 +61,25 @@
                     <ul class="nav-links">
                         <li><a href="/" class="active">Home</a></li>
                         <li class="dropdown">
-                            <a class="dropbtn">Immigration</a>
-                            <ul class="dropdown-content">
-                                <li><a href="immigration.html">Immigration</a></li>
-                                <li><a href="express-entry.html">Express Entry</a></li>
-                                <li><a href="express-assessment.html">Express Entry Assessment</a></li>
-                                <li><a href="pnp.html">PNP</a></li>
-                                <li><a href="work-permit.html">Work Permit</a></li>
-                                <li><a href="other-visa.html">Other Visas</a></li>
-                            </ul>
+                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i class="fa-sharp fa-solid fa-plus"></i></a></label>
+                            <input type="checkbox" id="check-btn">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="immigration.html">Immigration</a></li>
+                                    <li><a href="express-entry.html">Express Entry</a></li>
+                                    <li><a href="express-assessment.html">Express Entry Assessment</a></li>
+                                    <li><a href="pnp.html">PNP</a></li>
+                                    <li><a href="work-permit.html">Work Permit</a></li>
+                                    <li><a href="other-visa.html">Other Visas</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <!-- <li><a href="about.html">Work</a></li>
                         <li><a href="contact.html">Study</a></li>
                         <li><a href="contact.html">Visit</a></li> -->
                         <li><a href="employer.html">Employer</a></li>
-<li><a href="investor-visa.html">Investor Visa</a></li>
-<li><a href="about.html">About</a></li>
+                        <li><a href="investor-visa.html">Investor Visa</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
 
                     </ul>
@@ -94,7 +97,7 @@
                     <div class="col-md-8">
                         <div class="hero-text">
                             <div class="hero-logo">
-                                <img src="assets/logo.png" alt="">
+                                <img src="assets/logo-square.png" alt="">
                             </div>
                             <div class="hero-heading">
                                 One of the most trusted Immigration consultant in <span class="red-clr">Canada</span>
@@ -162,57 +165,68 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="serv-card serv">
-                            <div class="serv-head">
-                                Provincial Nominee Program (PNP)
+                        <a href="pnp.html">
+                            <div class="serv-card serv">
+                                <div class="serv-head">
+                                    Provincial Nominee Program (PNP)
+                                </div>
+                                <div class="serv-text">
+                                    The Provincial Nominee Program (PNP) allows Canadian provinces and territories...
+                                </div>
                             </div>
-                            <div class="serv-text">
-                                The Provincial Nominee Program (PNP) allows Canadian provinces and territories...
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="serv-card serv">
-                            <div class="serv-head">
-                                Express Entry
+                        <a href="express-entry.html">
+                            <div class="serv-card serv">
+                                <div class="serv-head">
+                                    Express Entry
+                                </div>
+                                <div class="serv-text">
+                                    Express entry to Canada is a completely electronic process where...
+                                </div>
                             </div>
-                            <div class="serv-text">
-                                Express entry to Canada is a completely electronic process where...
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="serv-card serv">
-                            <div class="serv-head">
-                                Spouse Sponsorship
+                        <a href="other-visa.html">
+                            <div class="serv-card serv">
+                                <div class="serv-head">
+                                    Spouse Sponsorship
+                                </div>
+                                <div class="serv-text">
+                                    Spouse sponsorship is program designed for Canadian citizen or PR to bring your
+                                    spouse
+                                    in Canada by getting..
+                                </div>
                             </div>
-                            <div class="serv-text">
-                                Spouse sponsorship is program designed for Canadian citizen or PR to bring your spouse
-                                in Canada by getting..
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="serv-card serv">
-                            <div class="serv-head">
-                                Business Immigration
+                        <a href="investor-visa.html">
+                            <div class="serv-card serv">
+                                <div class="serv-head">
+                                    Business Immigration
+                                </div>
+                                <div class="serv-text">
+                                    Business Immigration is designed to attract individual who are Willing invest in, or
+                                    start businesses in Canada.
+                                </div>
                             </div>
-                            <div class="serv-text">
-                                Business Immigration is designed to attract individual who are Willing invest in, or
-                                start businesses in Canada.
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="serv-card serv">
-                            <div class="serv-head">
-                                Work Permit
+                        <a href="work-permit.html">
+                            <div class="serv-card serv">
+                                <div class="serv-head">
+                                    Work Permit
+                                </div>
+                                <div class="serv-text">
+                                    Many Canadian employers are seeking foreign workers to help alleviate current labour
+                                    shortages..
+                                </div>
                             </div>
-                            <div class="serv-text">
-                                Many Canadian employers are seeking foreign workers to help alleviate current labour
-                                shortages..
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -227,7 +241,8 @@
             </div>
             <div class="need-emp-text">
                 <div class="need-emp-heading">
-                    Are you looking for right candidates to staff your business, or you have an employee you wish to retain?
+                    Are you looking for right candidates to staff your business, or you have an employee you wish to
+                    retain?
                 </div>
                 <a href="employer.html" class="prm-btn">Read More</a>
             </div>
@@ -298,19 +313,20 @@
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="express-assessment.html">Free Assessment</a></li>
                             <li><a href="employer.html">Employer</a></li>
-<li><a href="investor-visa.html">Investor Visa</a></li>
+                            <li><a href="investor-visa.html">Investor Visa</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-5">
                         <ul>
                             <li class="head">Get In Touch</li>
                             <li><span class="grey-text">13798 94A Ave Unit 207
-                                Surrey BC V3V 1N1</span></li>
+                                    Surrey BC V3V 1N1</span></li>
                             <li><span class="grey-text">Front Desk:</span> +1 (604) 349-3549</li>
                             <li><span class="grey-text">Email:</span> robin@globaleraimmigration.com</li>
                             <li><span class="grey-text">Mon-Fri:</span> 10:00AM - 7:00PM <br>
                                 <span class="grey-text">Saturday:</span> 10:30AM - 3:30PM <br>
-                                <span class="grey-text">Sunday:</span> Closed</li>
+                                <span class="grey-text">Sunday:</span> Closed
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-3 mb-5">

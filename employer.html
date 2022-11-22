@@ -44,7 +44,7 @@
         <header>
 
             <div class="container-xl">
-                <div class="nav d-flex align-items-center justify-content-between">
+                <div class="nav d-flex justify-content-between">
                     <div class="logo-img">
                         <a href="/">
                             <img src="assets/logo.png" alt="logo">
@@ -62,21 +62,24 @@
                     <ul class="nav-links">
                         <li><a href="/" class="active">Home</a></li>
                         <li class="dropdown">
-                            <a class="dropbtn">Immigration</a>
-                            <ul class="dropdown-content">
-                                <li><a href="immigration.html">Immigration</a></li>
-                                <li><a href="express-entry.html">Express Entry</a></li>
-                                <li><a href="express-assessment.html">Express Entry Assessment</a></li>
-                                <li><a href="pnp.html">PNP</a></li>
-                                <li><a href="work-permit.html">Work Permit</a></li>
-                                <li><a href="other-visa.html">Other Visas</a></li>
-                            </ul>
+                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i class="fa-sharp fa-solid fa-plus"></i></a></label>
+                            <input type="checkbox" id="check-btn">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="immigration.html">Immigration</a></li>
+                                    <li><a href="express-entry.html">Express Entry</a></li>
+                                    <li><a href="express-assessment.html">Express Entry Assessment</a></li>
+                                    <li><a href="pnp.html">PNP</a></li>
+                                    <li><a href="work-permit.html">Work Permit</a></li>
+                                    <li><a href="other-visa.html">Other Visas</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <!-- <li><a href="about.html">Work</a></li>
                         <li><a href="contact.html">Study</a></li>
                         <li><a href="contact.html">Visit</a></li> -->
                         <li><a href="employer.html">Employer</a></li>
-<li><a href="investor-visa.html">Investor Visa</a></li>
+                        <li><a href="investor-visa.html">Investor Visa</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
 
@@ -85,7 +88,6 @@
             </div>
 
         </header>
-
 
 
         <!-- service hero section -->
@@ -105,7 +107,7 @@
 
 
         <!-- about text -->
-        <div class="about-serv">
+        <div class="about-serv employer">
             <div class="container">
                 <p>Whether you own or manage a hotel, motel,restaurant, pub or banquet facility, hiring great people for
                     any business is always the most important task. After all a business is only good as the people it
@@ -115,6 +117,8 @@
 
                 <div class="big-head">
                     Call Us <span class="red-clr"> +1 (604) 349-3549</span>
+
+                    <a href="tel:+16043493549" class="prm-btn call-btn">Call Us</a>
                 </div>
 
 
@@ -164,8 +168,6 @@
                 </p>
 
 
-                <br>
-                <br>
                 <br>
                 <p>Our team possess over 20 years of hospitality business experience thus we understand your
                     requirements. We prescreen the right candidate though our vast candidate database and connect the
