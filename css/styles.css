@@ -186,7 +186,8 @@ header ul.nav-links>li::after {
 header ul.nav-links>li {
     position: relative;
 }
-header ul.nav-links>li a{
+
+header ul.nav-links>li a {
     line-height: 94px;
     display: block;
 }
@@ -467,9 +468,11 @@ footer ul li.head {
     font-weight: 800;
     margin-bottom: 20px;
 }
-footer ul li a{
+
+footer ul li a {
     color: #333;
 }
+
 footer ul li {
     margin-bottom: 10px;
     font-weight: 700;
@@ -563,7 +566,8 @@ footer .grey-text {
         color: #fff;
     }
 
-    header ul li a, header ul li label {
+    header ul li a,
+    header ul li label {
         font-size: 20px;
         color: #fff;
         width: fit-content;
@@ -600,7 +604,7 @@ footer .grey-text {
         font-size: 30px;
     }
 
-    header ul.nav-links>li {
+    header ul.nav-links>li a {
         line-height: 1;
     }
 
@@ -632,11 +636,16 @@ footer .grey-text {
     .dropdown:hover .dropdown-content {
         display: none;
     }
-    
 
-.dropdown:hover .dropbtn {
-    color: #fff;
-}
+
+    .dropdown:hover .dropbtn {
+        color: #fff;
+    }
+
+    .dropdown .dropdown-content a{
+        color: #aaa;
+        padding: 0;
+    }
 }
 
 
