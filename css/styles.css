@@ -219,6 +219,31 @@ header ul li:hover::after {
 .dropdown:hover .dropbtn {
     color: #6362B7;
 }
+.top-bar{
+    background: #403f78;
+    color: #fff;
+    padding: 10px 0;
+}
+.top-bar .contacts, .top-bar .socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.top-bar .contacts{
+    font-size: 13px;
+}
+.top-bar .contacts i{
+    margin-right: 5px;
+}
+.top-bar .contacts > div:not(:last-child){
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+.top-bar a{
+    color: #fff;
+}
+
 
 
 
@@ -234,7 +259,7 @@ header ul li:hover::after {
 
 .hero-heading {
     color: #fff;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     text-transform: uppercase;
     line-height: 1.2;
@@ -273,12 +298,52 @@ header ul li:hover::after {
     right: 0;
     width: 480px;
 }
-
-
-
+.hero-tiktok a{
+    color: #000;
+}
+.tiktok-video.active{
+    display: block;
+}
+.tiktok-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.tiktok-video .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+}
+.tiktok-video video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tiktok-video i.fa-xmark{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 50px;
+    color: #fff;
+    z-index: 999;
+}
 /* About Section */
 .about-sec {
-    padding: 80px 0;
+    padding: 100px 0 80px 0;
+    position: relative;
+}
+.about-sec-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .4;
+    width: 800px;
 }
 
 .sm-heading {
@@ -375,21 +440,49 @@ header ul li:hover::after {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    position: relative;
+    overflow: hidden;
 }
 
 .serv-card.serv .serv-head {
     color: #fff;
     font-weight: 700;
     font-size: 16px;
+    position: relative;
+    z-index: 2;
 }
 
 .serv-card.serv .serv-text {
     font-weight: 500;
     color: #fff;
     font-size: 12px;
+    position: relative;
+    z-index: 2;
+    line-height: 16px;
+    max-height: 32px;
+    overflow: hidden;
+    transition: all ease .5s;
 }
-
-
+.serv-card.serv::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 1;
+    transition: all ease .5s;
+}
+.serv-card.serv:hover::after{
+    height: 300px;
+    transition: all ease .5s;
+}
+.serv-card.serv:hover .serv-text{
+    max-height: 100px;
+    transition: all ease .5s;
+}
 
 
 
@@ -668,6 +761,9 @@ footer .grey-text {
 
     footer {
         text-align: center;
+    }
+    .top-bar .socials{
+        display: none;
     }
 }
 

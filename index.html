@@ -42,8 +42,42 @@
         <!-- Header -->
         <header>
 
+            <div class="top-bar">
+                <div class="container-xl">
+                    <div class="d-flex align-items-center justify-content-md-between justify-content-center">
+                        <div class="contacts">
+                            <div class="loc">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://goo.gl/maps/jedHbtWXbwmdrGfy6"><span>13798 94A Ave Unit 207 Surrey BC
+                                        V3V 1N1</span></a>
+                            </div>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+16043493549"><span>+1 (604) 349-3549</span></a>
+                            </div>
+                            <div class="mail">
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <a
+                                    href="mailto:robin@globaleraimmigration.com"><span>robin@globaleraimmigration.com</span></a>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <div class="tiktok">
+                                <a href="https://www.tiktok.com/@globaleraimmigration"><i
+                                        class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/globaleraimmigration/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="container-xl">
-                <div class="nav d-flex justify-content-between">
+                <div class="nav d-flex justify-content-between position-relative">
                     <div class="logo-img">
                         <a href="/">
                             <img src="assets/logo.png" alt="logo">
@@ -61,7 +95,8 @@
                     <ul class="nav-links">
                         <li><a href="/" class="active">Home</a></li>
                         <li class="dropdown">
-                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i class="fa-sharp fa-solid fa-plus"></i></a></label>
+                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i
+                                        class="fa-sharp fa-solid fa-plus"></i></a></label>
                             <input type="checkbox" id="check-btn">
                             <div class="dropdown-content">
                                 <ul>
@@ -106,10 +141,12 @@
                                 <div class="tiktok-img">
                                     <img src="assets/hero-tiktok.png" alt="">
                                 </div>
-                                <div class="tiktok-text">
-                                    Follow my vlog on tiktok
-                                    <img src="assets/tiktok-logo.png" alt="">
-                                </div>
+                                <a href="https://www.tiktok.com/@globaleraimmigration">
+                                    <div class="tiktok-text">
+                                        Follow my vlog on tiktok
+                                        <img src="assets/tiktok-logo.png" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -121,16 +158,29 @@
         </section>
 
 
+        <!-- tiktok video -->
+
+        <div class="tiktok-video">
+            <div class="bg-overlay"></div>
+            <i class="fa-solid fa-xmark"></i>
+            <video width="320" height="240" controls>
+                <source src="assets/hero-tiktok.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
         <!-- About Section -->
         <section class="about-sec">
+            <img src="assets/about-sec-bg.png" class="about-sec-img">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="about-img">
                             <img src="assets/about-img.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="ms-3 col-md-6">
                         <div class="about-text">
                             <span class="sm-heading">
                                 About Us
@@ -171,7 +221,7 @@
                                     Provincial Nominee Program (PNP)
                                 </div>
                                 <div class="serv-text">
-                                    The Provincial Nominee Program (PNP) allows Canadian provinces and territories...
+                                    The Provincial Nominee Program (PNP) allows Canadian provinces and territories to nominate individuals who wish to immigrate to Canada and who are interested in settling in a particular province.
                                 </div>
                             </div>
                         </a>
@@ -183,7 +233,7 @@
                                     Express Entry
                                 </div>
                                 <div class="serv-text">
-                                    Express entry to Canada is a completely electronic process where...
+                                    Express entry to Canada is a completely electronic process where an applicant is assessed based on their skills, age, education, language ability, work experience and other factors.
                                 </div>
                             </div>
                         </a>
@@ -197,7 +247,7 @@
                                 <div class="serv-text">
                                     Spouse sponsorship is program designed for Canadian citizen or PR to bring your
                                     spouse
-                                    in Canada by getting..
+                                    in Canada by getting.
                                 </div>
                             </div>
                         </a>
@@ -222,8 +272,9 @@
                                     Work Permit
                                 </div>
                                 <div class="serv-text">
-                                    Many Canadian employers are seeking foreign workers to help alleviate current labour
-                                    shortages..
+                                    Many Canadian employers are seeking foreign workers to help alleviate current labour shortages. There are hundreds of job opportunities available in Canada - especially in hotels, restaurants, catering, retail and trades.
+
+
                                 </div>
                             </div>
                         </a>
@@ -343,6 +394,26 @@
 
 
     </div>
+
+
+    <script>
+        let tiktokContainer = document.querySelector(".tiktok-video");
+        let tiktokImg = document.querySelector(".tiktok-img");
+        let tiktokCross = document.querySelector(".tiktok-video .fa-xmark");
+
+        tiktokImg.addEventListener("click", () => {
+            tiktokContainer.classList.add("active");
+            document.body.classList.add("overflow-hidden");
+            window.scrollTo(0, 0)
+        });
+
+        tiktokCross.addEventListener("click", () => {
+            tiktokContainer.classList.remove("active");
+            document.body.classList.remove("overflow-hidden");
+        });
+
+    </script>
+
 </body>
 
 </html>
