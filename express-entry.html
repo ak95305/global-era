@@ -62,7 +62,8 @@
                     <ul class="nav-links">
                         <li><a href="/" class="active">Home</a></li>
                         <li class="dropdown">
-                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i class="fa-sharp fa-solid fa-plus"></i></a></label>
+                            <label for="check-btn" class="dropbtn d-block"><a>Immigration <i
+                                        class="fa-sharp fa-solid fa-plus"></i></a></label>
                             <input type="checkbox" id="check-btn">
                             <div class="dropdown-content">
                                 <ul>
@@ -112,7 +113,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="left-text">
                             <p>Express entry to Canada is a completely electronic process where an applicant is assessed
                                 based
@@ -145,6 +146,10 @@
                                 <a href="" class="prm-btn">Free Assessment</a>To see if you qualify for this program
                             </div> -->
 
+
+                            <div class="free-assessment">
+                                <a class="prm-btn">Free Assessment</a>To see if you qualify for this program
+                            </div>
 
 
                             <span class="head">Express entry is based off three main streams:</span>
@@ -225,8 +230,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="form-modal">
                         <form method="post" class="form-j1 row" id="j1assessmentForm" novalidate="novalidate">
+                            <div class="form-heading">Free Assessment</div>
                             <div class="col-md-12" style="">
                                 <h3>Personal Details</h3>
                             </div>
@@ -358,7 +364,7 @@
                             <div class="col-md-12 col-sm-12" style="">
                                 <h3>Education</h3>
                             </div>
-                            <div class="col-md-12 col-sm-12 mt-5">
+                            <div class="col-md-12 col-sm-12 mt-3">
                                 <label class="form-label fw-bold">1.English/French Language proficiency: For Applicant
                                     (If
                                     applicable)</label>
@@ -393,7 +399,7 @@
                                 <label class="form-label">Overall band score</label>
                                 <input type="text" name="txtOverallBandScore" value="" class="form-control">
                             </div>
-                            <div class="col-md-12 col-sm-12 mt-5">
+                            <div class="col-md-12 col-sm-12 mt-3">
                                 <label class="form-label fw-bold font:bold">2.English/French Language proficiency: For
                                     Your
                                     Spouse
@@ -429,7 +435,7 @@
                                 <label class="form-label">Overall band score</label>
                                 <input type="text" value="" class="form-control" name="txtOverallBandScoreSpouce">
                             </div>
-                            <div class="col-md-12 col-sm-12 mt-5">
+                            <div class="col-md-12 col-sm-12 mt-3">
                                 <label class="form-label fw-bold">3. Highest level of Education : For Applicant (If
                                     Applicable)</label>
                             </div>
@@ -459,7 +465,7 @@
                                 <label class="form-label">Country</label>
                                 <input type="text" value="" class="form-control" name="txtCountry">
                             </div>
-                            <div class="col-md-12 col-sm-12 mt-5">
+                            <div class="col-md-12 col-sm-12 mt-3">
                                 <label class="form-label fw-bold">4. Highest level of Education : For Spouse (If
                                     Applicable)</label>
                             </div>
@@ -513,26 +519,22 @@
                                 </label>
                                 <input type="text" name="txtIsSimblingsinCanada" value="" class="form-control">
                             </div>
-                            <!--<div class="form-group  col-md-12 col-sm-12">
-                              <label class="form-label">Do you or your spouse have at least one brother or sister living in Canada who is a Citizen or Permanent Resident?
-                              </label>
-                              <input type="text"  name="txtIsSimblingsinCanada" value="" class="form-control">
-                              </div>-->
 
                             <div id="recaptcha" class="g-recaptcha"
                                 data-sitekey="6LeD6DEUAAAAAM49Z8qAGrVCAW1CAX4txLOv2V6n"
                                 data-callback="FormSubmitReCaptcha" data-size="invisible">
                             </div>
                             <div class="col-md-12 col-sm-12" style="">
-                                <h3> </h3>
                                 <br>
                             </div>
-                            <div class="form-group col-md-3 col-sm-3">
+                            <div class="form-group col-md-12">
                                 <button class="prm-btn" iid="submitButton" onclick="formSubmit()" type="submit">Submit
                                     Assessment</button>
                             </div>
                         </form>
                     </div>
+                    <div class="form-overlay"></div>
+                    <i class="fa-solid fa-xmark assess-cross"></i>
 
                 </div>
 
@@ -558,8 +560,8 @@
                     <div class="col-md-3 mb-5">
                         <ul>
                             <li class="head">Quick Links</li>
-                            <li><a href="about.html">About</a></li>
                             <li><a href="/">Home</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="express-assessment.html">Free Assessment</a></li>
                             <li><a href="employer.html">Employer</a></li>
@@ -593,6 +595,36 @@
 
 
     </div>
+
+
+    <script>
+
+        let freeAssBtn = document.querySelector(".free-assessment .prm-btn");
+        let freeAssBox = document.querySelector(".form-modal");
+        let freeAssBG = document.querySelector(".form-overlay");
+        let freeAssCross = document.querySelector(".assess-cross");
+
+        freeAssBtn.addEventListener("click", ()=>{
+            freeAssBox.classList.add("active");
+            freeAssBG.classList.add("active");
+            document.body.classList.add("overflow-hidden");
+            window.scrollTo(0,0);
+        });
+
+        freeAssCross.addEventListener("click", ()=>{
+            freeAssBox.classList.remove("active");
+            freeAssBG.classList.remove("active");
+            document.body.classList.remove("overflow-hidden");
+        });
+
+        freeAssBG.addEventListener("click", ()=>{
+            freeAssBox.classList.remove("active");
+            freeAssBG.classList.remove("active");
+            document.body.classList.remove("overflow-hidden");
+        });
+
+    </script>
+
 </body>
 
 </html>

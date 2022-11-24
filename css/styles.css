@@ -279,7 +279,9 @@ header ul li:hover::after {
 .hero-tiktok img {
     width: 150px;
 }
-
+.tiktok-img{
+    cursor: pointer;
+}
 .tiktok-text {
     background-color: #fff;
     padding: 10px 20px;

@@ -1,5 +1,5 @@
 /* service hero */
-.serv-hero{
+.serv-hero {
     background: url(../assets/immigration-header.jpg);
     height: 250px;
     padding: 40px 0;
@@ -8,14 +8,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.serv-hero-head{
+
+.serv-hero-head {
     position: relative;
 }
-.serv-hero-head h1{
+
+.serv-hero-head h1 {
     font-size: 50px;
     color: #fff;
     font-weight: 700;
 }
+
 .serv-hero-head::before {
     position: absolute;
     content: '';
@@ -25,6 +28,7 @@
     bottom: -8px;
     background: #ec4e4f;
 }
+
 .serv-hero-head .dotted-box .dotted {
     position: absolute;
     left: 44px;
@@ -32,15 +36,19 @@
     height: 3px;
     bottom: -8px;
 }
+
 .serv-hero-head .dotted-box .dotted {
     background: #ec4e4f;
 }
+
 .serv-hero-head .dotted-box .dotted:nth-child(2) {
     left: 50px;
 }
+
 .serv-hero-head .dotted-box .dotted:nth-child(3) {
     left: 56px;
 }
+
 .service-card {
     margin: 40px auto;
     background: #fff;
@@ -48,17 +56,20 @@
     max-width: 550px;
     padding-bottom: 30px;
 }
+
 .service-img img {
     height: 350px;
     width: 100%;
     object-fit: cover;
 }
+
 .service-card .prm-btn {
     display: block;
     width: fit-content;
     margin: auto;
     margin-top: 30px;
 }
+
 .service-text {
     padding: 20px;
     font-size: 14px;
@@ -67,14 +78,17 @@
     line-height: 1.7;
     text-align: center;
 }
+
 .service-img {
     text-align: center;
     position: relative;
 }
+
 .serv-sec {
     padding: 50px 0;
 }
-.serv-title{
+
+.serv-title {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -86,16 +100,16 @@
 
 
 
-.serv-hero.express-entry{
+.serv-hero.express-entry {
     background-image: url(../assets/express-header.png);
 }
 
 
-.about-serv{
+.about-serv {
     padding: 40px 0;
 }
 
-.about-serv p{
+.about-serv p {
     line-height: 2;
 }
 
@@ -103,7 +117,7 @@
     margin: 30px 0;
 }
 
-.free-assessment .prm-btn{
+.free-assessment .prm-btn {
     margin-right: 10px;
 }
 
@@ -115,13 +129,17 @@
     margin-bottom: 0px;
     display: inline-block;
 }
-.about-serv ul, .about-serv li {
+
+.about-serv ul,
+.about-serv li {
     list-style: disc;
     padding-left: 20px;
 }
+
 .about-serv ul {
     margin: 5px 0 10px 0;
 }
+
 .big-head {
     font-size: 30px;
     font-weight: 800;
@@ -130,114 +148,200 @@
 }
 
 
-.serv-hero.express-entry-assess{
+.serv-hero.express-entry-assess {
     background-image: url(../assets/immigration-header.jpg);
 }
 
-.about-serv .form-label{
+.about-serv .form-label {
     font-size: 14px;
     margin-top: 15px;
-    display:block;
+    display: block;
 }
 
-.about-serv h3{
+.about-serv h3 {
     margin-top: 40px;
 }
-.about-serv .left-text{
+
+.about-serv .left-text {
     background-color: #F2F9FF;
     padding: 20px;
 }
-.serv-hero.pnp{
+
+.serv-hero.pnp {
     background-image: url(../assets/pnp-header.jpg);
     background-position: center;
 }
 
 
 /* city card */
-.city-cards{
+.city-cards {
     margin: 20px 0;
 }
-.city-card{
+
+.city-card {
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-.city-card img, .city-card .bg-overlay{
+
+.city-card img,
+.city-card .bg-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.city-card span{
+
+.city-card span {
     z-index: 1;
     color: #fff;
     font-weight: 700;
     font-size: 25px;
 }
-.city-card .bg-overlay{
+
+.city-card .bg-overlay {
     background: rgba(0, 0, 0, .5);
 }
 
 
 
 
-.serv-hero.work-permit{
+.serv-hero.work-permit {
     background-image: url(../assets/work-header.jpg);
     background-position: center;
 }
 
 
 
-.serv-hero.other-visa{
+.serv-hero.other-visa {
     background-image: url(../assets/other-visa-header.png);
     background-position: center;
 }
 
 
 
-.serv-hero.contact{
+.serv-hero.contact {
     background-image: url(../assets/contact-header.jpg);
     background-position: center;
 }
 
 
-.serv-hero.investor{
+.serv-hero.investor {
     background-image: url(../assets/investor-visa-header.png);
     background-position: bottom;
 }
 
 
 
-.serv-hero.employer{
+.serv-hero.employer {
     background-image: url(../assets/employer-header.png);
     background-position: center;
 }
 
 
-.about-serv.contact form{
+.about-serv.contact form {
     max-width: 700px;
     margin: auto;
 }
 
 
-.about-serv.contact form input,.about-serv.contact form select{
+.about-serv.contact form input,
+.about-serv.contact form select {
     height: 50px;
 }
 
 
-.about-serv.about p{
-    font-size: 20px;
-}
+.about-serv.about p {
+    font-size: 16px;
+    line-height: 1.7;
+}   
 
-
-.about-serv.employer .call-btn{
+.about-serv.employer .call-btn {
     font-size: 16px;
     margin-left: 20px;
 }
 
-.about-serv{
+.about-serv {
     font-size: 18px;
+}
+
+
+
+
+.form-modal {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 700px;
+    transform: translateX(-50%);
+    background: #fff;
+    z-index: 3;
+    margin: 20px 0;
+    overflow: auto;
+    padding: 30px;
+    display: none;
+}
+
+.form-modal.active {
+    display: block;
+}
+
+.form-overlay.active {
+    display: block;
+}
+
+.form-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.form-modal h3 {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight:700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #ffc0c0;
+    padding-top: 20px;
+}
+
+.form-modal .free-assessment {
+    font-size: 25px;
+}
+
+.form-modal .form-heading {
+    font-size: 25px;
+    font-weight: 800;
+    color: #ec4e4f;
+}
+
+.free-assessment .prm-btn {
+    cursor: pointer;
+}
+
+.assess-cross {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: auto;
+    font-size: 25px;
+    color: #fff;
+    z-index: 3;
+    cursor: pointer;
+}
+.red-clr a{
+    color: #ff0000;
+    text-decoration: underline;
 }
