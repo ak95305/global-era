@@ -639,13 +639,15 @@
         freeAssBtn.addEventListener("click", ()=>{
             freeAssBox.classList.add("active");
             freeAssBG.classList.add("active");
+            freeAssCross.classList.add("active");
             document.body.classList.add("overflow-hidden");
             window.scrollTo(0,0);
         });
-
+        
         freeAssCross.addEventListener("click", ()=>{
             freeAssBox.classList.remove("active");
             freeAssBG.classList.remove("active");
+            freeAssCross.classList.remove("active");
             document.body.classList.remove("overflow-hidden");
         });
 

@@ -330,7 +330,9 @@ p {
 .free-assessment .prm-btn {
     cursor: pointer;
 }
-
+.assess-cross.active{
+    display: block;
+}
 .assess-cross {
     position: absolute;
     top: 50px;
@@ -340,6 +342,7 @@ p {
     color: #fff;
     z-index: 3;
     cursor: pointer;
+    display: none;
 }
 .red-clr a{
     color: #ff0000;

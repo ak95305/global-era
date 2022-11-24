@@ -742,6 +742,9 @@ footer .grey-text {
         color: #aaa;
         padding: 0;
     }
+    .assess-cross.active{
+        color: #000;
+    }
 }
 
 
