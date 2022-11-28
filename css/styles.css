@@ -249,6 +249,10 @@ header ul li:hover::after {
 
 
 /* Hero Section */
+
+.mob-slider{
+    display: none !important;
+}
 .hero-sec {
     background: url('../assets/header-bg.png');
     padding: 40px 0;
@@ -749,6 +753,12 @@ footer .grey-text {
 
 
 @media only screen and (max-width: 767px) {
+    .pc-slider{
+        display: none !important;
+    }
+    .mob-slider{
+        display: block !important;
+    }
     .client-image {
         display: none;
     }
@@ -780,5 +790,9 @@ footer .grey-text {
 
     .hero-text {
         text-align: center;
+    }
+
+    header .logo-img{
+        width: 210px;
     }
 }
