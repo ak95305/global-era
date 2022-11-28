@@ -351,6 +351,7 @@ header ul li:hover::after {
     right: 0;
     opacity: .4;
     width: 800px;
+    z-index: -1;
 }
 
 .sm-heading {
