@@ -146,7 +146,7 @@ li.login-btn {
     display: none;
     position: absolute;
     min-width: 220px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .dropdown .dropdown-content a {
