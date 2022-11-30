@@ -380,7 +380,10 @@ header ul li:hover::after {
     line-height: 1.2;
     margin-top: 10px;
 }
-
+span.inr-text {
+    color: #a52a2a;
+    text-transform: lowercase;
+}
 .about-text {
     font-size: 14px;
     color: #666;
